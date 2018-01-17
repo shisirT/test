@@ -1,9 +1,9 @@
-function abc(subject){
+function abc(subject,cb){
 
    var note;
-
-  //setTimeout(function(){
-	switch (subject) {
+ 
+   setTimeout(function(){
+	switch (subject){
 		case 'javaScript ':
 		  note = {
 			name: 'sen',
@@ -32,13 +32,12 @@ function abc(subject){
 			address: 'ktm',
 			url: 'https://www.hereicome.com'
 		  }
-	
+	cb(note);
 	}
-	return note;
-  //},3000);
+   },3000);
+ }
+console.log('welcome to the programming');
+abc('javaScript',function(result){
+	console.log('your programming language is: ', result)
 
-}
-
-console.log('start learning programming');
-var closureConcept = abc('mongodb');
-console.log('hey',closureConcept);
+});
