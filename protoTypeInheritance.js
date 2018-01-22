@@ -24,13 +24,23 @@ var obj = {
 var closureStyle = new restaurants (obj);
 console.log(closureStyle.allNames());
 
+//constructor    //class initialized
+//inheritance --code sharing
 
+class addRestaurants extends restaurants{
+	constructor(){
+		super({});//parent classko constructor call gareko
+	}
+	callparentMethod(){
+		console.log('extended class method called');
+		
+	}
+}
 
+var collectRestaurant = new addRestaurants();
+collectRestaurant.callparentMethod();
 
-
-
-
-
+//prototype object object constructor
 
 
 
