@@ -24,7 +24,10 @@ function abc (subject,cb){
 
 console.log('you are in the programming language info:  ');
 abc('java',function(result){
-  console.log('your name is: ',result)
+  console.log('your name is: ',result);
 });
+
+9851016046
+jskisor@gmail.com
 
 
